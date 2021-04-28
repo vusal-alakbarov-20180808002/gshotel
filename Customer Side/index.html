@@ -42,10 +42,10 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="/pages/about.html">About</a>
+                    <a href="pages/about.html">About</a>
                 </li>
                 <li>
-                    <a href="/pages/rooms.html">Rooms</a>
+                    <a href="pages/rooms.html">Rooms</a>
                 </li>
                 <li>
                     <a href="#contact">Contact</a>
@@ -53,6 +53,119 @@
             </ul>
         </nav>
     </header>
+
+    <section class="reservation">
+        <div class="dates option">
+            <label for="check-in">
+                <p>Check In</p>
+                <input type="date" id="check-in">
+            </label>
+
+            <label for="check-out">
+                <p>Check Out</p>
+                <input type="date" id="check-out">
+            </label>
+        </div>
+
+        <div class="numbers option">
+            <label for="rooms">
+                <p>Rooms</p>
+                <input type="number" id="rooms" min="1" value="1">
+            </label>
+
+            <label for="guests">
+                <p>Guests</p>
+                <input type="number" id="guests" min="1" value="1">
+            </label>
+        </div>
+
+        <div class="check-button">
+            <a href="#">Check</a>
+        </div>
+    </section>
+
+    <section class="our-amenities">
+        <h2>Our amenities</h2>
+
+        <div class="amenities">
+            <div class="amenity">
+                <i class="fas fa-utensils"></i>
+                <p>On Site Restaurant</p>
+            </div>
+
+            <div class="amenity">
+                <i class="fas fa-swimmer"></i>
+                <p>Indoor Pool</p>
+            </div>
+
+            <div class="amenity">
+                <i class="fas fa-car"></i>
+                <p>Free Parking</p>
+            </div>
+
+            <div class="amenity">
+                <i class="fas fa-dumbbell"></i>
+                <p>Fitness Center</p>
+            </div>
+
+            <div class="amenity">
+                <i class="fas fa-tint"></i>
+                <p>SPA</p>
+            </div>
+
+            <div class="amenity">
+                <i class="fas fa-wifi"></i>
+                <p>Free Wi-Fi</p>
+            </div>
+
+            <div class="amenity">
+                <i class="fas fa-wind"></i>
+                <p>Air Conditioner</p>
+            </div>
+
+            <div class="amenity">
+                <i class="fas fa-paw"></i>
+                <p>Pets allowed</p>
+            </div>
+
+            <div class="amenity">
+                <i class="fas fa-futbol"></i>
+                <p>Football Pitch</p>
+            </div>
+
+            <div class="amenity">
+                <i class="fas fa-concierge-bell"></i>
+                <p>Room Service</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <aside>
+            <table class="contact-info">
+                <tr>
+                    <td class="icon"><i class="fas fa-headset"></i></td>
+                    <td>444 1905</td>
+                </tr>
+                <tr>
+                    <td class="icon"><i class="fas fa-map-marker-alt"></i></td>
+                    <td>Taksim square, Istiklal avenue, Istanbul/Turkey</td>
+                </tr>
+            </table>
+
+            <div class="socials">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </aside>
+
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.458643574851!2d28.99078165739233!3d41.102673444781615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab68279d16fe3%3A0x5f125583ee2cf022!2sT%C3%BCrk%20Telekom%20Arena!5e0!3m2!1sen!2s!4v1619447061249!5m2!1sen!2s"
+                width="512" height="256" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
 
     <footer>
         <div class="lines">
