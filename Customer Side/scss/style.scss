@@ -307,6 +307,130 @@ body {
                 }
             }
         }
+
+        &.about {
+            border-bottom: 0;
+
+            img {
+                margin-top: 48px;
+                float: right;
+            }
+
+            h1 {
+                font-weight: bold;
+                text-transform: uppercase;
+                color: $red;
+                font-size: 24px;
+                margin-bottom: 16px;
+            }
+
+            p {
+                font-size: 15px;
+                max-width: 1000px;
+                line-height: 1.2em;
+            }
+        }
+
+        &.rooms {
+            border-bottom: 0;
+
+            h1 {
+                font-size: 32px;
+                font-weight: bold;
+                text-align: center;
+                text-transform: uppercase;
+                color: $red;
+                margin-bottom: 16px;
+            }
+
+            .room {
+                height: 250px;
+                width: 100%;
+                margin: 16px;
+                display: flex;
+                justify-content: center;
+                border: 1px solid $alternative-black;
+                border-radius: 5px;
+                z-index: 1;
+                margin-bottom: 32px;
+
+                .photo {
+                    img {
+                        height: 250px;
+                        z-index: -1;
+                        border-top-left-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                    }
+                }
+
+                .info {
+                    padding: 8px;
+                    padding-left: 16px;
+
+                    h2 {
+                        font-size: 24px;
+                        text-transform: capitalize;
+                        font-weight: medium;
+                        color: $red;
+                        margin-bottom: 8px;
+                    }
+
+                    p {
+                        max-width: 80%;
+                        line-height: 1.1;
+                        margin-bottom: 8px;
+                    }
+
+                    .bottom {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-end;
+                        
+                        .highlights {
+                            margin-top: 8px;
+                            h3 {
+                                font-size: 16px;
+                                font-weight: bold;
+                                margin-bottom: 8px;
+                            }
+        
+                            ul {
+                                list-style-type: disc;
+                                margin-left: 20px;
+        
+                                li {
+                                    margin-bottom: 4px;
+                                }
+                            }
+                        }
+
+                        .details {
+                            p.fee {
+                                max-width: 1000px;
+                                font-size: 16px;
+                                
+                                span {
+                                    font-weight: bold;
+                                }
+                            }
+
+                            a {
+                                padding: 12px 16px;
+                                background: $red;
+                                color: #fff;
+                                font-size: 16px;
+                                transition: 200ms all ease-in-out;
+                                text-transform: uppercase;
+
+                                &:hover {
+                                    background: darken($red, 5);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     
     footer {
