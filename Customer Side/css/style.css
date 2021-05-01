@@ -543,8 +543,8 @@ body section.rooms h1 {
 }
 
 body section.rooms .room {
-  height: 250px;
   width: 100%;
+  height: 250px;
   margin: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -552,22 +552,22 @@ body section.rooms .room {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 1px solid #221f1f;
-  border-radius: 5px;
-  z-index: 1;
   margin-bottom: 32px;
 }
 
 body section.rooms .room .photo img {
   height: 250px;
-  z-index: -1;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border: 1px solid #221f1f;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
 }
 
 body section.rooms .room .info {
   padding: 8px;
   padding-left: 16px;
+  border: 1px solid #221f1f;
+  border-left: 0;
+  border-radius: 0 4px 4px 0;
 }
 
 body section.rooms .room .info h2 {
