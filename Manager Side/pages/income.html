@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GS Hotel | Admin Panel</title>
-    <link rel="shortcut icon" type="image/png" href="image/favicon.png">
-    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>GS Hotel | Monthly/Daily Income</title>
+    <link rel="shortcut icon" type="image/png" href="../image/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
@@ -16,23 +18,25 @@
 <body>
     <aside>
         <div class="logo">
-            <img src="image/gshotel-logo.png" alt="GS Hotel Logo">
+            <img src="../image/gshotel-logo.png" alt="GS Hotel Logo">
         </div>
 
         <nav>
             <ul>
                 <li>
-                    <a href="index.html" class="active"><label><i class="fas fa-home"></i></label>Dashboard</a>
+                    <a href="../index.html"><label><i class="fas fa-home"></i></label>Dashboard</a>
                 </li>
                 <li>
-                    <a href="pages/reservation.html"><label><i class="far fa-edit"></i></label>Make Reservation</a>
+                    <a href="reservation.html"><label><i class="far fa-edit"></i></label>Make
+                        Reservation</a>
                 </li>
                 <li>
-                    <a href="pages/check-in-out.html"><label><i class="far fa-calendar-alt"></i></label>Show
-                        Check-in/out Dates</a>
+                    <a href="check-in-out.html"><label><i class="far fa-calendar-alt"></i></label>Show Check-in/out
+                        Dates</a>
                 </li>
                 <li>
-                    <a href="pages/income.html"><label><i class="fas fa-coins"></i></label>Monthly/Daily Income</a>
+                    <a href="income.html" class="active"><label><i class="fas fa-coins"></i></label>Monthly/Daily
+                        Income</a>
                 </li>
             </ul>
         </nav>
@@ -76,15 +80,19 @@
                     </div>
 
                     <div class="photo">
-                        <img src="image/avatar.jpg" alt="Vusal Alakbarov">
+                        <img src="../image/avatar.jpg" alt="Vusal Alakbarov">
                     </div>
                 </div>
             </div>
         </header>
 
-        <section>
-            <div class="gif">
-                <img src="image/gs-logo.gif" alt="GS Logo (GIF)">
+        <section class="graphics">
+            <div class="container">
+                <canvas id="daily-income"></canvas>
+            </div>
+
+            <div class="container">
+                <canvas id="monthly-income"></canvas>
             </div>
         </section>
 
@@ -97,6 +105,8 @@
                 Made by <a href="#">Vusal Alakbarov</a>.
             </p>
         </footer>
+
+        <script src="../js/main.js"></script>
     </main>
 </body>
 
