@@ -638,6 +638,184 @@ body section.rooms .room .info .bottom .details a:hover {
   background: #790826;
 }
 
+body section.booking {
+  border-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body section.booking main h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #221f1f;
+  margin-bottom: 16px;
+}
+
+body section.booking main .table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 4px solid #91092d;
+  border-bottom: 4px solid #91092d;
+  padding: 8px 0;
+  margin-bottom: 16px;
+}
+
+body section.booking main .table div {
+  width: 400px;
+}
+
+body section.booking main .table div h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #91092d;
+  margin-bottom: 8px;
+}
+
+body section.booking main .table div p {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+body section.booking main .table div.right {
+  text-align: right;
+}
+
+body section.booking main h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #221f1f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 12px;
+}
+
+body section.booking main h2 label {
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 4px;
+}
+
+body section.booking main form.guest-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 12px;
+}
+
+body section.booking main form.guest-info input {
+  padding: 16px 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 4px;
+}
+
+body section.booking main form.card-info div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section.booking main form.card-info div input {
+  padding: 16px 12px;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+body section.booking main form.card-info div select {
+  padding: 16px 12px;
+  border: 1px solid #ccc;
+  width: 49.5%;
+}
+
+body section.booking main a.button {
+  width: 100%;
+  text-align: center;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background: #91092d;
+  margin-top: 24px;
+  -webkit-transition: 200ms all ease-in-out;
+  transition: 200ms all ease-in-out;
+}
+
+body section.booking main a.button:hover {
+  background: #790826;
+}
+
+body section.booking aside {
+  height: 100vh;
+}
+
+body section.booking aside .photo img {
+  height: 240px;
+}
+
+body section.booking aside h2 {
+  margin: 8px 0;
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 4px;
+}
+
+body section.booking aside p {
+  font-size: 18px;
+  padding-left: 4px;
+}
+
+body section.booking aside span {
+  display: block;
+  font-size: 14px;
+  opacity: .7;
+  margin: 6px 0;
+  padding-left: 4px;
+}
+
+body section.booking aside a {
+  color: #91092d;
+  padding-left: 4px;
+}
+
+body section.booking aside a:hover {
+  text-decoration: underline;
+}
+
 body footer .lines {
   display: -webkit-box;
   display: -ms-flexbox;
